@@ -8,54 +8,82 @@
     <link rel="stylesheet" href="card.css">
 </head>
 <body>
-    <div class="cardContainer">
-        <div class="registor">
-            <img src="img2.jpeg" alt="">
-            <p>Name : Tono hartono</p>
-            <p>Gender : Male</p>
-            <p>Hobby : Sleep</p>
-            <p>Nationality : Malaysian</p>
-        </div>
-        <div class="registor">
-            <img src="img2.jpeg" alt="">
-            <p>Nama : Hamzah Alghifari</p>
-            <p>Gender : Male</p>
-            <p>Hobby : Drink</p>
-            <p>Nationality : Arabian  </p>
-
-        </div>
-        <div class="registor">
-            <img src="img2.jpeg" alt="">
-            <p>Nama : Chintya Claudia</p>
-            <p>Gender : Female</p>
-            <p>Hobby : Eat</p>
-            <p>Nationality : Thailand</p>
-
-        </div>
-        <div class="registor">
-            <img src="img2.jpeg" alt="">
-            <p>Nama : Azriel Fahrezi </p>
-            <p>Gender : Male</p>
-            <p>Hobby : Sleep</p>
-            <p>Nationality : Indonesian</p>
-
-        </div>
-        <div class="registor">
-            <img src="img2.jpeg" alt="">
-            <p>Nama : Lala Kumalasari</p>
-            <p>Gender : Female</p>
-            <p>Hobby : Eat</p>
-            <p>Nationality : Indonesian</p>
-
-        </div>
-        <div class="registor">
+    <div class="header">
+        <button onclick="bukaModal()" class="btn">Add</button>
+        <input class="searchByName" type="text" placeholder="Search by name">
+        
+    </div>
+    
+    <div class="container" id="tester">
+        <div class="registor"> 
+            <div class="editDelete">
+                <button class="delete">x</button>
+                <button class="edit">edit</button>
+            </div>
             <img src="img2.jpeg" alt="">
             <p>Nama :Sunanti Novita</p>
             <p>Gender : Female</p>
             <p>Hobby : Drink</p>
             <p>Nationality : Malaysian</p>
-
         </div>
     </div>
+
+    <div class="modal hilang" id="modal">
+        <button onclick="tutupModal()" class="btn">Close</button>
+            <div class="containerCard">
+                 <div class="newCard">
+                        <form action="">
+                            <div> 
+                                <label for="first" class="style">First Name: </label>
+                                <br>
+                                <input type="text" name="" id="first">
+                            </div>
+
+                            <div>
+                                <label for="last" class="style">Last Name: </label>
+                                <br>
+                                <input type="text" name="" id="last">
+                            </div>
+                        
+                            
+                            <p>Gender</p>
+                            <div>
+                                <label for="male" class="style">Male</label>
+                                <input type="radio" name="gender" id="male">
+                                <label for="female" class="style">Female</label>
+                                <input type="radio" name="gender" id="female">
+                            </div>
+                            
+            
+                            
+                
+                            <p>Hobbies</p>
+                            <div>
+                                <label for="drink" class="style">Drink</label>
+                                <input type="checkbox" name="" id="drink">
+                
+                                <label for="eat" class="style">Eat</label>
+                                <input type="checkbox" name="" id="eat">
+                
+                                <label for="sleep" class="style">Sleep</label>
+                                <input type="checkbox" name="" id="sleep">
+                            </div>
+                            
+                
+                            <label for="nationality"> 
+                                <select name="nationality" id="nationality">   
+                                    <option value="">Indonesian</option>
+                                    <option value="">Malaysian</option>
+                                    <option value="">Thailand</option>
+                                    <option value="">Arabian</option>
+                                </select>
+                            </label>
+                            <button class="addCard">Add</button> 
+                        </form>
+                </div>
+            </div>
+
+    </div>
+<script src="script.js"></script>
 </body>
 </html>

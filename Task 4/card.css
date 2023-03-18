@@ -6,19 +6,83 @@
 body{
     background-image: url(img3.jpeg);
 }
+ .header{
+    background-color: antiquewhite;
+    width: 100%;
+    height: 50px;
+    
 
-.cardContainer{
+ }
+
+ .header{
+    display: flex;
+    justify-content: space-between;
+
+ }
+
+ .btn{
+    background-color: rgb(168, 151, 114);
+    color: azure;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+    margin-left: 50px;
+    margin-top: 10px;
+    border-radius: 5px;
+
+    
+ }
+
+ .searchByName{   
+    height: 25px;
+    border-radius: 10px;
+    padding-left: 10px;
+    margin-top: 10px;
+    margin-right: 50px;
+    font-size: 18px;
+    
+ }
+
+
+ /* tombol edit delete/ */
+ .editDelete{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+ }
+
+ .edit{
+    width: 50px;
+    margin-left: 10px;
+    background-color: rgb(168, 151, 114);
+    color: azure;
+    border-radius: 5px;
+    font-weight: bolder;
+ }
+
+ .delete{
+    width: 50px;
+    margin-right: 10px;
+    background-color: rgb(168, 151, 114);
+    color: azure;
+    border-radius: 5px;
+    font-weight: bolder;
+ }
+
+
+
+
+
+/* Card */
+.container{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     font-weight: bold;
     font-size: 19px;
-
-    
-    
 }
-
-
 
 .registor{
     width: 300px;
@@ -41,3 +105,90 @@ img{
     margin-left: auto;
     margin-right: auto;
 }
+
+.modal {
+    background-color: rgba(114, 111, 111, 0.5);
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+   
+}
+
+.hilang {
+    display: none;
+}
+
+
+
+/* new card */
+
+
+.containerCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newCard{
+    
+    width: 400px;
+    height: 600px;
+    border: solid;
+    display: flex;
+    flex-direction: column;
+    font-size: 17px;
+    border-radius: 50px;
+    box-shadow: 10px 10px 25px 10px rgba(0, 0, 0, 1);
+    font-weight: bold;
+    background-color: antiquewhite;
+
+   
+
+}
+
+form{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100%;
+}
+
+
+
+.addCard{
+    background-color: rgb(168, 151, 114);
+    color: azure;
+    font-size: 20px;
+    font-weight: bolder;
+    width: 100px;
+    height: 30px;
+    border-radius: 5px;
+
+
+}
+
+#first{
+    border-radius: 10px;
+    width: 200px;
+    height: 30px;
+    font-size: 100%;
+    padding-left: 10px;
+}
+
+#last{
+        border-radius: 10px;
+        width: 200px;
+        height: 30px;
+        font-size: 100%;
+        padding-left: 10px;
+    
+}
+
+#nationality{
+    font-size: 17px;
+}
+
+
+
