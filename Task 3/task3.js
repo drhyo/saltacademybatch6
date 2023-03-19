@@ -13,14 +13,9 @@ for(let i = 1; i <= 100; i++) {
     }  
 }
 
-
 console.log('Area Fibonacci');
 
-let x = 0, y = 1, z = 0
-for(let x = z; x <= 100000000000; x++) {  
-    x = y
-    y = z
-    z = x + y
-    console.log('ini fibonacci  ' +  x);
-    
+
+
+   
 }
